@@ -1,0 +1,23 @@
+{
+  "name": "node-snowflake",
+  "version": "1.0.0",
+  "description": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenjitsuGame/node-snowflake.git"
+  },
+  "author": "Pascal Luttgens <pascal.luttgens@hotmail.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GenjitsuGame/node-snowflake/issues"
+  },
+  "homepage": "https://github.com/GenjitsuGame/node-snowflake#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "jsbn": "^0.1.0"
+  }
+}
