@@ -1,1 +1,1 @@
-# Distributed Unique & Numeric IDs
+# Node implementation of twitter snowflake
