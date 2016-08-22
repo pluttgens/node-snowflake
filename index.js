@@ -1,5 +1,7 @@
 'use strict';
 
 module.exports = {
-    Snowflake: require('./lib/snowflake')
+    Snowflake:  {
+        Worker: require('./lib/snowflake-worker')
+    }
 };

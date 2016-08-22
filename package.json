@@ -4,7 +4,7 @@
   "description": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/.bin/mocha --recursive tests"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,10 @@
   "dependencies": {
     "bluebird": "^3.4.1",
     "jsbn": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "bluebird": "^3.4.1",
+    "mocha": "^3.0.2"
   }
 }
