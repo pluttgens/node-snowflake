@@ -3,7 +3,6 @@
 const chai = require('chai');
 const expect = chai.expect;
 const Promise = require('bluebird');
-const rp = require('request-promise');
 
 const Snowflake = require('../index');
 
@@ -100,28 +99,5 @@ describe('Snowflake-worker', function () {
                 })
                 .catch(done);
         });
-    });
-});
-
-
-describe('snowflake-server', function () {
-    describe('GET /id', function () {
-        before(function (done) {
-            this._port = 3004;
-            Snowflake.listen(this._port, done);
-        });
-        
-        it('should fetch an id', function(done) {
-            rp
-                .get({
-                    url: 'http://localhost:' + this._port + '/id',
-                    json:true
-                })
-                .then(data => {
-                    expect(data.id).to.be.ok;
-                    done();
-                })
-                .catch(done)
-        })
     });
 });
